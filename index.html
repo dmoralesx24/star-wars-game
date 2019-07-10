@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- my css stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Star Wars RPG</title>
+</head>
+<body>
+    <div class="title-section">Star Wars RPG!</div>
+    <div class="main-game-section">
+        <!-- where the character start -->
+        <div id="character-section">
+            <div class="section-title">Select Your Character</div>
+        </div>
+
+        <!-- section for selected character -->
+        <div id="selected-character-section">
+            <div class="section-title">Your Character</div>
+            <!-- where the selected character will appear -->
+            <div id="selected-character"></div>
+        </div>
+
+        <div id="available-to-attack">
+            <div class="section-title">Enemies Available To Attack</div>
+        </div>
+
+        <div class="section-title">Fight Section</div>
+        <div id="fight-section">
+            <button id="attack-btn">Attack</button>
+        </div>
+
+        <div id="action">
+            <div class="character-section">
+                <div class="section-title">Defender</div>
+                <!-- where the defender will appear -->
+                <div id="defender"></div>
+            </div>
+        </div>
+    </div>
+    <div class="game-message"></div>
+
+        <!-- jquery CDN -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+        <!-- my javascript file -->
+        <script type="text/javascript" src="assets/javacript/stars.js"></script>
+</body>
+</html>
