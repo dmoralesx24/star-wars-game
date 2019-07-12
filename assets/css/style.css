@@ -5,11 +5,40 @@ body {
     background-attachment: fixed;
 }
 
+img {
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+}
+
 .section-title {
     font-size: 200%;
 }
 
 .title-section {
     font-size: 300%;
+    text-align: center;
+}
+
+.character {
+    display: inline-block;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.character-image {
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.character-name {
+    text-align: center;
+}
+.character-health {
     text-align: center;
 }
