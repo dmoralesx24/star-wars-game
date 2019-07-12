@@ -231,18 +231,19 @@ $(document).ready(function() {
           restartGame("You have been defeated... GAME OVER!!");
           $("#attack-btn").unbind("click");
         }
+      }    else {
+        // remove opponent charcter card if defeated
+        renderCharacters(currDefender, "enemyDefeated");
+        // increment kill count
+        killCount++;
+        // if you killed all the opponents you win.
+        if (killCount >= 3) {
+          renderMessage("clearMessage");
+          restartGame("You Won!!!! GAME OVER!!");
+        }
       }
-    } else {
-      // remove opponent charcter card if defeated
-      renderCharacters(currDefender, "enemyDefeated");
-      // increment kill count
-      killCount++;
-      // if you killed all the opponents you win.
-      if (killCount >= 3) {
-        renderMessage("clearMessage");
-        restartGame("You Won!!!! GAME OVER!!");
-      }
-    }
+    } 
+
     turnCounter++;
   });
 });
